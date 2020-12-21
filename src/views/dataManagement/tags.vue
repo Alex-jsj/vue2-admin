@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import * as theApi from '@api/dataManagement/tags';
+import * as theApi from '@api/mock';
 import { fileApi } from '@api/public';
 /* 组件 */
 import baseTable from '@components/baseTable';

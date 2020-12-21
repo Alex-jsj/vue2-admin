@@ -116,15 +116,14 @@ export function checkPhone(rule, value, callback) {
 	}
 }
 /**
-	 * 1.可以是中文
-	   2.可以是英文，允许输入点（英文名字中的那种点）， 允许输入空格
-    3.中文和英文不能同时出现
-           4.长度在20个字符以内
-	 */
+	    1.可以是中文
+	    2.可以是英文，允许输入点（英文名字中的那种点）， 允许输入空格
+        3.中文和英文不能同时出现
+        4.长度在20个字符以内
+	*/
 // 姓名验证
 export function checkName(rule, value, callback) {
 	const reg = /(^(?:[\u4e00-\u9fa5·]{2,20})$)|(^[a-zA-Z]{1}[a-zA-Z\s]{0,20}[a-zA-Z]{1}$)/;
-
 	if (!value) {
 		return callback(new Error('姓名不能为空'));
 	} else if (reg.test(value) === false) {

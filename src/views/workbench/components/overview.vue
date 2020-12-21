@@ -18,7 +18,7 @@
 
 <script>
 // api
-import { getOverView } from '@api/home';
+import { getOverView } from '@api/mock';
 // 插件
 import CountTo from 'vue-count-to';
 import { mapState } from 'vuex';

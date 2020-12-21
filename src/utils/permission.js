@@ -1,5 +1,3 @@
-// 权限控制
-
 import router from '../route';
 import store from '../store';
 import { getUrlQuery } from './public'; // 获取url中的参数

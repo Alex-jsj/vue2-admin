@@ -42,7 +42,7 @@
 
 <script>
 /* api */
-import * as theApi from '@api/dataClassify/publicClassify';
+import * as theApi from '@api/mock';
 /* 组件 */
 import baseTable from '@components/baseTable';
 /* 混入 */

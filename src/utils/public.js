@@ -1,4 +1,5 @@
 import md5 from 'js-md5';
+
 /**
  * 获取url中的某个参数
  * @param {String} url
@@ -6,7 +7,6 @@ import md5 from 'js-md5';
  */
 export const getUrlQuery = (url = '', field = '') => {
 	let query, the_field;
-
 	if (url.indexOf('?') === -1) {
 		return;
 	}
@@ -55,71 +55,6 @@ export function uuid() {
 }
 
 /**
- * 圆环canvas
- * @param {*} drawing_elem
- * @param {*} percent
- * @param {*} forecolor
- * @param {*} bgcolor
- */
-export function circle_canvas(drawing_elem, percent, forecolor, bgcolor) {
-	// @drawing_elem: 绘制对象
-	// @percent：绘制圆环百分比, 范围[0, 100]
-	// @forecolor: 绘制圆环的前景色，颜色代码
-	// @bgcolor: 绘制圆环的背景色，颜色代码
-	let context = drawing_elem.getContext('2d'),
-		center_x = drawing_elem.width / 2,
-		center_y = drawing_elem.height / 2,
-		rad = (Math.PI * 2) / 100,
-		speed = 0;
-	// drawing_elem.style.width = drawing_elem.parentNode.clientHeight + 'px';
-	// drawing_elem.style.height = drawing_elem.parentNode.clientHeight + 'px';
-	// drawing_elem.setAttribute('width', drawing_elem.parentNode.clientHeight * 2);
-	// drawing_elem.setAttribute('height', drawing_elem.parentNode.clientHeight * 2);
-	// 绘制背景圆圈
-
-	function backgroundCircle() {
-		context.save();
-		context.beginPath();
-		context.lineWidth = 8; //设置线宽
-		let radius = center_x - context.lineWidth;
-
-		context.lineCap = 'round';
-		context.strokeStyle = bgcolor;
-		context.arc(center_x, center_y, radius, 0, Math.PI * 2, false);
-		context.stroke();
-		context.closePath();
-		context.restore();
-	}
-
-	//绘制运动圆环
-	function foregroundCircle(n) {
-		context.save();
-		context.strokeStyle = forecolor;
-		context.lineWidth = 8;
-		context.lineCap = 'round';
-		let radius = center_x - context.lineWidth;
-
-		context.beginPath();
-		context.arc(center_x, center_y, radius, -Math.PI / 2, -Math.PI / 2 + n * rad, false); //用于绘制圆弧context.arc(x坐标，y坐标，半径，起始角度，终止角度，顺时针/逆时针)
-		context.stroke();
-		context.closePath();
-		context.restore();
-	}
-
-	//执行动画
-	(function drawFrame() {
-		window.requestAnimationFrame(drawFrame);
-		context.clearRect(0, 0, drawing_elem.width, drawing_elem.height);
-		backgroundCircle();
-		foregroundCircle(speed);
-		if (speed >= percent) {
-			return;
-		}
-		speed += 2;
-	})();
-}
-
-/**
  * 计算百分比
  * @param {*} data
  * @param {*} total
@@ -128,7 +63,6 @@ export function component_percent(data, total) {
 	// data 当前数值
 	// total 总数值
 	let percent = null;
-
 	if (data > 0 && total > 0) {
 		percent = ((data / total) * 100).toFixed(0);
 	} else {

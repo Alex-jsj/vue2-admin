@@ -1,9 +1,9 @@
 <template>
 	<div id="page404">
-		<p class="num" :class="{'numShow':num_show}">404!</p>
-		<p class="text" :class="{'textShow':num_show}">Page Not Found</p>
-		<div class="btn" :class="{'btnShow':num_show}">
-			<router-link to="/views/index" class="link">{{$t('404.backToHome')}}</router-link>
+		<p class="num" :class="{ numShow: num_show }">404!</p>
+		<p class="text" :class="{ textShow: num_show }">Page Not Found</p>
+		<div class="btn" :class="{ btnShow: num_show }">
+			<router-link to="/views/index" class="link">{{ $t('404.backToHome') }}</router-link>
 			<!-- <router-link to @click.native="$router.back(-1)" class="link">{{$t('404.backToPrev')}}</router-link> -->
 		</div>
 	</div>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-	name: "page404",
+	name: 'page404',
 	data() {
 		return {
 			num_show: false
@@ -26,11 +26,11 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "~@assets/css/mixin.less";
+@import '~@assets/css/mixin.less';
 #page404 {
 	width: 100%;
 	height: 100vh;
-	background: url("../../../public/img/login_background@2x.png") no-repeat;
+	background: url('../../../public/img/login_background_2.jpg') no-repeat;
 	background-size: 100% 100%;
 	overflow: hidden;
 	position: relative;

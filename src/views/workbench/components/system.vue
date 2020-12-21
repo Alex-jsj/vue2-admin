@@ -29,7 +29,7 @@
 
 <script>
 // api
-import { getSystemInfo } from '@api/home';
+import { getSystemInfo } from '@api/mock';
 import { circle_canvas, component_percent } from '@utils/public';
 import { mapState } from 'vuex';
 export default {
