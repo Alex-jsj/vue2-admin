@@ -1,0 +1,164 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "工作台",
+            "component": "/views/home/index",
+            "path": "/views/index/home",
+            "icon": "icon-home",
+            "children": [],
+            "sort": 0,
+            "level": 1,
+            "hidden": false
+        },
+        {
+            "id": 2,
+            "title": "用户管理",
+            "component": "/views/user/index",
+            "path": "/views/index/user",
+            "icon": "icon-user",
+            "children": [
+                {
+                    "id": 3,
+                    "title": "系统用户",
+                    "component": "/views/user/admin",
+                    "path": "/views/index/user/admin",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                },
+                {
+                    "id": 4,
+                    "title": "普通用户",
+                    "component": "/views/user/normal",
+                    "path": "/views/index/user/normal",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                }
+            ],
+            "sort": 1,
+            "level": 1,
+            "hidden": false
+        },
+        {
+            "id": 5,
+            "title": "组件",
+            "component": "/views/components/index",
+            "path": "/views/index/components",
+            "icon": "icon-component",
+            "children": [
+                {
+                    "id": 6,
+                    "title": "表格",
+                    "component": "/views/components/table",
+                    "path": "/views/index/components/table",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                }
+            ],
+            "sort": 2,
+            "level": 1,
+            "hidden": false
+        },
+        {
+            "id": 7,
+            "title": "附件管理",
+            "component": "/views/accessory/index",
+            "path": "/views/index/accessory",
+            "icon": "icon-account",
+            "children": [
+                {
+                    "id": 8,
+                    "title": "附件列表",
+                    "component": "/views/accessory/list",
+                    "path": "/views/index/accessory/list",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                }
+            ],
+            "sort": 2,
+            "level": 1,
+            "hidden": false
+        },
+        {
+            "id": 9,
+            "title": "系统管理",
+            "component": "/views/system/index",
+            "path": "/views/index/system",
+            "icon": "icon-setting",
+            "children": [
+                {
+                    "id": 10,
+                    "title": "消息通知",
+                    "component": "/views/system/message",
+                    "path": "/views/index/system/message",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                },
+                {
+                    "id": 11,
+                    "title": "系统日志",
+                    "component": "/views/system/log",
+                    "path": "/views/index/system/log",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                },
+                {
+                    "id": 12,
+                    "title": "数据备份",
+                    "component": "/views/system/backup",
+                    "path": "/views/index/system/backup",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                },
+                {
+                    "id": 13,
+                    "title": "角色管理",
+                    "component": "/views/system/role",
+                    "path": "/views/index/system/role",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                },
+                {
+                    "id": 14,
+                    "title": "权限管理",
+                    "component": "/views/system/permission",
+                    "path": "/views/index/system/permission",
+                    "icon": "",
+                    "children": [],
+                    "level": 2,
+                    "hidden": false
+                }
+            ],
+            "sort": 2,
+            "level": 1,
+            "hidden": false
+        },
+        {
+            "id": 15,
+            "title": "我的账户",
+            "component": "/views/account/index",
+            "path": "/views/index/account",
+            "icon": "icon-head-portrait",
+            "children": [],
+            "sort": 0,
+            "level": 1,
+            "hidden": false
+        }
+    ]
+}

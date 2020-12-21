@@ -1,0 +1,84 @@
+/* 过渡 */
+.transi {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* 清除浮动 */
+.clear {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.el-message-box__status {
+  top: 20px;
+}
+.progress {
+  width: 60%;
+  margin: 30px auto;
+}
+.progress .el-step.is-horizontal .el-step__line {
+  top: 0.7rem;
+}
+/* .el-textarea */
+.el-textarea {
+  vertical-align: middle;
+}
+.el-textarea .el-input__count {
+  background: rgba(255, 255, 255, 0.5);
+}
+.el-dialog {
+  border-radius: 4px;
+}
+.el-dialog .el-dialog__header {
+  padding: 8px 10px 0;
+}
+.el-dialog .el-dialog__header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: teal;
+  margin-top: 8px;
+}
+.el-dialog .el-dialog__header .el-dialog__title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #505154;
+}
+.el-dialog .el-dialog__header .el-dialog__headerbtn {
+  top: 12px;
+  right: 10px;
+}
+.el-dialog .el-dialog__body {
+  padding: 20px 10px;
+}
+.el-dialog .el-dialog__footer {
+  padding: 10px 10px;
+}
+.el-form-item {
+  margin-bottom: 15px;
+}
+.el-form-item .el-form-item {
+  margin-bottom: 15px;
+}
+[class*=el-col-] {
+  min-height: 50px;
+}
+.el-message-box {
+  font-size: initial;
+}
+/* 层级修正 */
+.el-loading-mask {
+  z-index: 1000;
+}
+@media screen and (max-width: 769px) {
+  .el-message {
+    width: 95%;
+    min-width: auto;
+  }
+  .el-message-box {
+    width: 90%;
+  }
+}

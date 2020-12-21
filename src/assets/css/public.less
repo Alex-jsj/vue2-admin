@@ -1,0 +1,68 @@
+@import "./mixin.less";
+
+// 引导组件
+.introjs-helperLayer {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.introjs-tooltip {
+    font-size: 14px;
+}
+
+.introjs-helperNumberLayer {
+    display: none;
+}
+
+/* 表格内图片 */
+.table-image {
+    width: 200px;
+}
+
+/* 色弱模式 */
+
+.color-week {
+    -webkit-filter: invert(80%);
+    filter: invert(80%);
+}
+
+/* 灰度模式 */
+
+.color-grayscale {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+/* 夜间模式 */
+
+.color-brightness-1 {
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+}
+
+.color-brightness-2 {
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+}
+
+.color-brightness-3 {
+    -webkit-filter: brightness(0.3);
+    filter: brightness(0.3);
+}
+
+/* 公用样式 */
+// 表单部分
+.form-item-with-add {
+    .el-select {
+        width: calc(~'100% - 70px');
+    }
+
+    .el-form-item__content {
+        &>.el-input {
+            width: calc(~'100% - 70px');
+        }
+    }
+
+    .add-more-btn {
+        margin-left: 5px;
+    }
+}
