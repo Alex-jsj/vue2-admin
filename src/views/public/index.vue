@@ -28,7 +28,7 @@
 				<router-view class="views" :key="key" v-else />
 			</transition>
 			<!-- 底部 -->
-			<p class="footer">© CopyRight {{ year }}, 中国美术学院云上国美数字化资源库共享平台, Inc.All Rights Reserved.</p>
+			<p class="footer">© CopyRight {{ year }}, 后台管理系统, Inc.All Rights Reserved.</p>
 		</div>
 		<!-- 固定右侧工具 -->
 		<SiteSetting />
