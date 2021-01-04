@@ -36,3 +36,18 @@ export function batchDeleteItems(data) {
 		return Promise.resolve(res);
 	});
 }
+export function getTrend(data) {
+	return axios.get('/mock/list.json', { params: data }).then(res => {
+		return Promise.resolve(res);
+	});
+}
+export function uploadFile(data) {
+	return axios.get('/mock/list.json', { params: data }).then(res => {
+		return Promise.resolve(res);
+	});
+}
+export function getOverView(data) {
+	return axios.get('/mock/list.json', { params: data }).then(res => {
+		return Promise.resolve(res);
+	});
+}

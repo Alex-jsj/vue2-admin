@@ -6,8 +6,6 @@
 		<Overview />
 		<!-- 趋势 -->
 		<Trend />
-		<!-- 服务器信息 -->
-		<System />
 	</div>
 </template>
 
@@ -15,15 +13,13 @@
 import QuickEnter from './components/quickEnter';
 import Overview from './components/overview';
 import Trend from './components/trend';
-import System from './components/system';
 
 export default {
 	name: 'workbench',
 	components: {
 		QuickEnter,
 		Overview,
-		Trend,
-		System
+		Trend
 	}
 };
 </script>
